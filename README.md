@@ -34,7 +34,7 @@ creates automated readme for user by taking the answers and inputting them into 
 ![image of output folder](./assets/images/Screen%20Shot%202022-06-14%20at%206.07.22%20PM.png)
 
 Heres a video walkthrough:
-![video of program](https://user-images.githubusercontent.com/104460100/173700026-aa0d5a67-385b-45eb-a4aa-9eaa63dd83dd.mp4)
+https://user-images.githubusercontent.com/104460100/173700026-aa0d5a67-385b-45eb-a4aa-9eaa63dd83dd.mp4
 
 
 # Credits
