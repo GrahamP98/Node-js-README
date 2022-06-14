@@ -1,20 +1,65 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const fs = require('fs');
+const generateLicense = (type) => {
+  let color;
+  if (type === "MPL") color = "red";
+  if (type === "GPL") color = "gray";
+  if (type === "Apache") color = "green";
+  if (type === "MIT") color = "blue";
+  if (type === "CC") color = "yellow";
+  if (type === "BSD") color = "purple";
+  return (
+    `## License
+![license picture](https://img.shields.io/badge/license-${type}-${color})
+    `
+  );
+};
+// generates markdown for README
+const generateMarkdown = ({
+  Title,
+  Description,
+  github,
+  repo,
+  Usage,
+  Credits,
+  license
+}) => {
+  console.log('Generating README...');
+  const template = (
+    `# ${Title}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+## Description
+${Description}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+## Table of Contents
+      
+- [Resources](#Resources)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+      
+## Resources
+[Github Account](https://github.com/${github})
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+[Github Repository](https://github.com/${github}/${repo})
 
-`;
-}
+[Live Site](https://${github}.github.io/${repo}/)
 
-module.exports = generateMarkdown;
+## Usage
+${Usage}
+
+# Credits
+${Credits}
+
+${generateLicense(license)}
+
+
+`
+  );
+  fs.writeFileSync('./output/README.md', template);
+  console.log('Template Granted!');
+  process.exit();
+};
+
+module.exports = {
+  generateMarkdown
+};
