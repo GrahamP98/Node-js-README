@@ -1,7 +1,7 @@
 # NodejsReadME
 
 ## Description
-creates automated read me files
+creates an automated readme file
 
 ## Table of Contents
       
@@ -12,18 +12,19 @@ creates automated read me files
       
 ## Resources
 [Github Account](https://github.com/GrahamP98)
+
 [Github Repository](https://github.com/GrahamP98/Node-js-README)
 
 [Live Site](https://GrahamP98.github.io/Node-js-README/)
 
 ## Usage
-run node index.js in terminal and answer prompts
+figure it out
 
 # Credits
-Graham
+Graham Purnell
 
 ## License
-![license picture](https://img.shields.io/badge/license-MIT-blue)
+![license picture](https://img.shields.io/badge/license-Apache-green)
     
 
 

@@ -18,7 +18,24 @@ creates automated readme for user by taking the answers and inputting them into 
 [Live Site](https://GrahamP98.github.io/Node-js-README/)
 
 ## Usage w/ Visuals
-run node index.js in terminal and answer prompts
+1. Open terminal
+![image of terminal](./assets/images/Screen%20Shot%202022-06-14%20at%206.03.14%20PM.png)
+
+2. Go to NodejsReadME directory
+![image of terminal](./assets/images/Screen%20Shot%202022-06-14%20at%206.00.58%20PM.png)
+
+3. Run node index.js
+![image of terminal](./assets/images/Screen%20Shot%202022-06-14%20at%206.01.14%20PM.png)
+
+4. Answer prompts
+![image of terminal](./assets/images/Screen%20Shot%202022-06-14%20at%206.02.11%20PM.png)
+
+5. Open the output folder and your newly created README will be inside!
+![image of output folder](./assets/images/Screen%20Shot%202022-06-14%20at%206.07.22%20PM.png)
+
+Heres a video walkthrough:
+![video of program](./assets/videos/GrahamP98-Node-js-README.gif)
+
 
 # Credits
 Graham Purnell 2022
